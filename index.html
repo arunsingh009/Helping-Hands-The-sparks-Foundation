@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSF-TASK</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="#"><img src="logo.png" class="logo" alt="logo"></a>
+
+        </div>
+        <div class="nav-right">
+            <ul>
+                <a href="">
+                    <li>Home</li>
+                </a>
+                <a href="#about">
+                    <li>About Us</li>
+                </a>
+                <a href="#contact">
+                    <li>Contact Us</li>
+                </a>
+            </ul>
+
+        </div>
+    </nav>
+    <!-- carousel start from here  -->
+    <section id="home">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <!-- <div class="numbertext">1 / 3</div> -->
+                <img src="pic1.jfif" class="cimg">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <!-- <div class="numbertext">2 / 3</div> -->
+                <img src="pic2.jpg" class="cimg">
+            </div>
+
+            <div class="mySlides fade">
+                <!-- <div class="numbertext">3 / 3</div> -->
+                <img src="pic3.jpg" class="cimg">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div class="main-dot">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+    </section>
+    <section id="about">
+        <div class="heading">
+            <p>What We Do</p>
+        </div>
+        <div class="content">
+            <div class="abox1">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe quas temporibus quis eaque, sit nemo magnam earum quod eum animi doloremque nam odio veniam, hic libero, placeat quae dolorum aliquid ipsum consectetur possimus. Laboriosam quidem quos ut earum iure assumenda! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur perferendis ut aut neque quo accusantium voluptatem cum excepturi voluptatum?</p>
+
+            </div>
+            <div class="abox2">
+                <img src="pic4.png" alt="">
+
+            </div>
+        </div>
+        <div class="donate">
+            <div class="db">
+            <a href="https://rzp.io/l/YKTNKzbZ" target="_blank" class="btn1">Donate</a>
+        </div>
+        </div>
+
+    </section>
+    <section id="contact">
+        <div class="cf">
+            <div class="form">
+                <div class="mf">
+                <form action="#">
+                    <label for="name" class="label">Name </label><br>
+                    <input type="text" id="name" class="input"><br>
+                    <label for="no"class="label">Mobile </label><br>
+                    <input type="text" id="no" class="input"><br>
+                    <label for="email"class="label">Email </label><br>
+                    <input type="email" id="email" class="input"><br>
+                    <label for="textbox"class="label" >Write For Us &#128522;</label><br>
+                    <textarea name="textbox" id="" cols="30" rows="8" class="input"></textarea><br>
+                    <button class="btn2">Submit</button>
+                </form>
+            </div>
+
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div>&copy; Copyright 2021, Helping Hands Task3 done by Arun Kumar Singh</div>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+
+</html>

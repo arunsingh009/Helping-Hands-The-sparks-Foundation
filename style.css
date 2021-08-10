@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+/* nav starts from here  */
+nav{
+    display: flex;
+    width: 100%;
+    position: sticky;
+}
+nav::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 20vh;
+    background-color: #000;
+    opacity: 0.4;
+    z-index: -1;
+}
+.cimg{
+    width: 100%;
+    height: 100vh;
+}
+.nav-left {
+    width: 30%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: invert(2);
+
+}
+.nav-right{
+    width: 70%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-right ul{
+    width: 50%;
+    display: flex;
+    list-style:none;
+    justify-content: space-evenly;
+
+}
+.nav-right ul a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+
+}
+.nav-right ul a:hover{
+    color: yellow;
+}
+.logo{
+    height: 15vh;
+    width: auto;
+}
+
+/* nav ends  */
+/* home section begins from here  */
+#home
+{
+    box-sizing:border-box;
+    height: 85vh;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  overflow-y: hidden;
+  /* margin: auto; */
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.main-dot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 10vh;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* about us section starts from here  */
+.heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.abox1,.abox2{
+  width: 30%;
+  height: 50vh;
+}
+.abox1 p{
+  font-size: 18px;
+  font-weight: 400;
+  padding: 30px;
+}
+.abox2{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.donate{
+  width: 60%;
+  height: 60vh;
+  margin: 0px auto;
+  overflow-y: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+.donate::before{
+  content: "";
+  width: 60%;
+  height: 60vh;
+  background: url(pic5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+}
+.db{
+  width:30%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  margin-bottom: 16vh;
+  margin-left: 45%;
+}
+.db a{
+  text-decoration: none;
+  color: #000;
+}
+.btn1{
+  height: 40px;
+  width: 150px;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn1:hover{
+  background-image: linear-gradient(to right,#FF67E7,#C400FF) ;
+  border: 1px solid white;
+}
+
+/* contact starts from here  */
+.cf{
+  width: 100%;
+  height: 80vh;
+  background-color: #C400FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.form{
+  width: 60%;
+  height: 70vh;
+  border:2px solid transparent;
+  background-color: #fff;
+  opacity:0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mf{
+  width: 70%;
+  height: 60vh;
+  border:2px solid transparent;
+  opacity: 1;
+  padding: 15px;
+}
+.mf input{
+  
+  height:22px;
+  border: 2px solid black;
+  border-radius: 10px;
+  outline: transparent;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.input{
+  width: 80%;
+}
+.label{
+  font-size: 18px;
+  font-weight: bold;
+}
+.btn2{
+  width: 80%;
+  height: 30px;
+  margin-top: 10px;
+  background-color: red;
+  font-size: 22px;
+}
+.btn2:hover{
+  background-image: linear-gradient(to right,#f12dd4,#7e08a1);
+}
+footer div{
+  width: 100%;
+  height: 10vh;
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
